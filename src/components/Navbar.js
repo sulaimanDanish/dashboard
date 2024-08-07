@@ -5,10 +5,19 @@ const Nav = styled.nav`
    display: flex;
    flex-direction: row;
    align-items: center;
-   width: 100%;
+   width: calc(100% - 30px);
    height: 75px;
    overflow: hidden;
    background-color: #1d283c;
+   position:fixed;
+
+   @media (max-width: 1024px) { 
+      width: calc(100% - 15px);
+   }
+
+    @media (max-width: 425px) { 
+      width: calc(100% - 5px);
+   }
 `
 const search = {
     background: "#818589",
@@ -52,6 +61,10 @@ const Icons = styled.a`
   &:hover {
     background-color: #919191;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 const ProfileContainer = styled.div`
   display: flex;
@@ -84,12 +97,29 @@ const profileIcon = {
     height: "3rem"
 }
 
+const HamburgerIcon = styled.div`
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+`;
+
 export default class Navbar extends Component {
 
     render() {
         return (
             <>
                 <Nav>
+                <HamburgerIcon>
+                    <img style={image} src="https://cdn-icons-png.flaticon.com/128/8727/8727897.png" alt="menu-icon" />
+                </HamburgerIcon>
                     <div style={search}>
                         <input type="text" name="search" placeholder="Search..." style={input} />
                         <span >

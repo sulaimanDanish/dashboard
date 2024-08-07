@@ -42,7 +42,6 @@
 
 .chart {
     width: calc(100% - 62px);
-    ;
     height          : auto;
     padding         : 0 20px;
     border-radius   : 15px;

@@ -9,6 +9,10 @@ const Bar = styled.aside`
    height: 100%;
    overflow: hidden;
    background-color: #1d283c;
+
+   @media (max-width: 1024px) { 
+     display: none;
+   }
 `
 const Home = styled.a`
     display: flex;

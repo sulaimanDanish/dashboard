@@ -6,6 +6,7 @@ import Orders from "./components/Order";
 import appStyles from "./App.module.css";
 import Activity from "./components/Activity";
 import Feedback from "./components/Feedback";
+import Overview from "./components/Overview";
 
 const dashboard = {
   display: "flex",
@@ -84,7 +85,7 @@ export default class App extends Component {
             </div>
             <div className={appStyles.rightContainer}>
               <div className={appStyles.halfDivs}>
-
+                  <Overview/>
               </div>
               <div className={appStyles.halfDivs}>
                 <Feedback/>
