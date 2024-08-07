@@ -2,7 +2,8 @@
     display : flex;
     width   : 100vw;
     height  : 100vh;
-    overflow: hidden;
+    overflow: auto;
+    background-color: #101827;
 }
 
 .mainContainer {
@@ -19,7 +20,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap                  : 10px;
     padding              : 10px;
-    overflow             : auto;
 }
 
 .leftContainer {
@@ -55,4 +55,25 @@
     flex           : 1;
     align-items    : center;
     justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .gridContainer {
+        flex-direction: column;
+    }
+    
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cardContainer {
+        grid-template-columns: 1fr;
+    }
+    
+    .chart, .halfDivs {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
 }

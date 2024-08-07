@@ -10,6 +10,7 @@ const Nav = styled.nav`
    overflow: hidden;
    background-color: #1d283c;
    position:fixed;
+   z-index:10;
 
    @media (max-width: 1024px) { 
       width: calc(100% - 15px);
