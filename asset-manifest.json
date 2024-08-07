@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sulaimanDanish/dashboard/static/css/main.8fb2b3d0.css",
+    "main.js": "/sulaimanDanish/dashboard/static/js/main.7e84ca5b.js",
+    "index.html": "/sulaimanDanish/dashboard/index.html",
+    "main.8fb2b3d0.css.map": "/sulaimanDanish/dashboard/static/css/main.8fb2b3d0.css.map",
+    "main.7e84ca5b.js.map": "/sulaimanDanish/dashboard/static/js/main.7e84ca5b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8fb2b3d0.css",
+    "static/js/main.7e84ca5b.js"
+  ]
+}
